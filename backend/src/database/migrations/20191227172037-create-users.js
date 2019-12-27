@@ -8,7 +8,7 @@ module.exports = {
         allowNull: false,
       },
       name: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
       },
       email: {
@@ -21,11 +21,11 @@ module.exports = {
         allowNull: false,
       },
       city: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: false,
       },
       state: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: false,
       },
       created_at: {

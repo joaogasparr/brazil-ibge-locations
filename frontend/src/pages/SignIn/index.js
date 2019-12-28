@@ -1,12 +1,12 @@
 import React from 'react';
 import { Form } from '@rocketseat/unform';
-import SubmitButton from '~/components/Button';
-
-import history from '~/services/history';
-import AuthLayout from '~/pages/_layouts/auth';
 
 import logo from '~/assets/logo.svg';
-// import { Container } from './styles';
+
+import history from '~/services/history';
+
+import AuthLayout from '~/pages/_layouts/auth';
+import SubmitButton from '~/components/Button';
 
 export default function SignIn() {
   function handleSubmit() {

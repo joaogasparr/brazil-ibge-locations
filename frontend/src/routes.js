@@ -9,7 +9,7 @@ import UserCreate from '~/pages/User/Create';
 export default function Routes() {
   return (
     <Switch>
-      <Route path="/" exact component={SignIn} />
+      <Route path="/" exact render={SignIn} />
 
       <Route path="/user" exact component={UserList} />
       <Route path="/user/create" component={UserCreate} />

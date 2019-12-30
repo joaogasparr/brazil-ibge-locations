@@ -8,6 +8,7 @@ import { MdKeyboardArrowLeft, MdDone } from 'react-icons/md';
 import history from '~/services/history';
 import api from '~/services/api';
 import ibge from '~/services/ibge';
+import schema from '~/validators/User';
 
 import Header from '~/components/Title';
 import Button from '~/components/Button';
@@ -126,7 +127,7 @@ export default function Create() {
   return (
     <DefaultLayout>
       <Container>
-        <Form initialData={users} onSubmit={handleSubmit}>
+        <Form initialData={users} schema={schema} onSubmit={handleSubmit}>
           <Header text={id ? 'Edição de usuário' : 'Cadastro de usuário'}>
             <Link to="/user">
               <Button
